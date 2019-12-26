@@ -1,36 +1,10 @@
 # workspace
 
-FIXME: description
+THis is an attempt to build the lambda batch layer for one of the Big Data projects.
 
-## Installation
+the architecture diagram is:
 
-Download from http://example.com/FIXME.
+CDC -> NiFi  ------------------------------------------------------------------------------->  (PIG: execution) -> RESULTS
+                                                                                                    /
+UI(Mapping and execution plan) -> (lambda_lbatch .Parsing an execution plan and produce Pig script)/
 
-## Usage
-
-FIXME: explanation
-
-    $ java -jar workspace-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2016 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.

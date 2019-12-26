@@ -8,6 +8,7 @@ CDC -> NiFi  -------------->  (PIG: execution) -> RESULTS
                          /
 UI() -> (lambda_lbatch )/
 
+
 CDC                              - Maxwell to read the MySql logs
 Nifi                             - NiFi to transform the CDC stream to both Immutable and RAW streams and store it on Lake
 lambda_lbatch                    - Parsing an execution plan and produce Pig script
